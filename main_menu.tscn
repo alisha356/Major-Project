@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://0hlsh4jgdmx8"]
+
+[node name="Main Menu" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_top = 217.0
+offset_right = 1153.0
+offset_bottom = 256.0
+theme_type_variation = &"HeaderLarge"
+text = "2D Platformer"
+horizontal_alignment = 1
+vertical_alignment = 1
