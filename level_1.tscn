@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cy4t234s1vtll"]
+
+[node name="Level 1" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 78.0
+offset_bottom = 47.0
+text = "Level 1"
