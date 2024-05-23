@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q2bmsnfku1ck"
-path="res://.godot/imported/shroomTanMid.png-8cb284f51543f5d83f1cc30cc8c72cff.ctex"
+uid="uid://ccpfbyia4drt"
+path="res://.godot/imported/Mushies.png-ecc12a0dcfcdb152ab5e8c7d8643ce7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mushroom Assets/PNG/shroomTanMid.png"
-dest_files=["res://.godot/imported/shroomTanMid.png-8cb284f51543f5d83f1cc30cc8c72cff.ctex"]
+source_file="res://Assets/Mushies.png"
+dest_files=["res://.godot/imported/Mushies.png-ecc12a0dcfcdb152ab5e8c7d8643ce7f.ctex"]
 
 [params]
 

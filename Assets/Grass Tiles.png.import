@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4070kyc7be8f"
-path="res://.godot/imported/shroomRedAltMidAlt.png-3ad6e961cd0ec22d7fbcc2b6b80bd21c.ctex"
+uid="uid://birlm40hl62dp"
+path="res://.godot/imported/Grass Tiles.png-a77907efa11ba9e93b687c111468ed79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mushroom Assets/PNG/shroomRedAltMidAlt.png"
-dest_files=["res://.godot/imported/shroomRedAltMidAlt.png-3ad6e961cd0ec22d7fbcc2b6b80bd21c.ctex"]
+source_file="res://Assets/Grass Tiles.png"
+dest_files=["res://.godot/imported/Grass Tiles.png-a77907efa11ba9e93b687c111468ed79.ctex"]
 
 [params]
 

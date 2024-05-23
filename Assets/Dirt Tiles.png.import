@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxumd27pxb8om"
-path="res://.godot/imported/shroomRedAltRight.png-59ded40a48c8a75076866bb5cbad799d.ctex"
+uid="uid://bdn66gfxe73ga"
+path="res://.godot/imported/Dirt Tiles.png-b79c5e532f9b83b95da0bccce5256c4e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mushroom Assets/PNG/shroomRedAltRight.png"
-dest_files=["res://.godot/imported/shroomRedAltRight.png-59ded40a48c8a75076866bb5cbad799d.ctex"]
+source_file="res://Assets/Dirt Tiles.png"
+dest_files=["res://.godot/imported/Dirt Tiles.png-b79c5e532f9b83b95da0bccce5256c4e.ctex"]
 
 [params]
 

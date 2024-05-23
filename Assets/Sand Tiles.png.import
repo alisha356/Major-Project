@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m5mai56aowxk"
-path="res://.godot/imported/Castle Tiles.png-ba471c4524b7afa98ee61687ab652cb4.ctex"
+uid="uid://dw8d63d4d3h48"
+path="res://.godot/imported/Sand Tiles.png-65d004367e295a37193c023725519c69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Base Assets/Castle Tiles.png"
-dest_files=["res://.godot/imported/Castle Tiles.png-ba471c4524b7afa98ee61687ab652cb4.ctex"]
+source_file="res://Assets/Sand Tiles.png"
+dest_files=["res://.godot/imported/Sand Tiles.png-65d004367e295a37193c023725519c69.ctex"]
 
 [params]
 

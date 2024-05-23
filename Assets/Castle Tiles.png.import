@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0s4w6hy7ajil"
-path="res://.godot/imported/shroomBrownAltSpotsRight.png-d101599923c3d92c5f5eb8d7e2b005ad.ctex"
+uid="uid://m5mai56aowxk"
+path="res://.godot/imported/Castle Tiles.png-ed9969aacc103360d93c9e6b55eacfb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mushroom Assets/PNG/shroomBrownAltSpotsRight.png"
-dest_files=["res://.godot/imported/shroomBrownAltSpotsRight.png-d101599923c3d92c5f5eb8d7e2b005ad.ctex"]
+source_file="res://Assets/Castle Tiles.png"
+dest_files=["res://.godot/imported/Castle Tiles.png-ed9969aacc103360d93c9e6b55eacfb5.ctex"]
 
 [params]
 
