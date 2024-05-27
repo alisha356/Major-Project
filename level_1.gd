@@ -11,5 +11,5 @@ func _ready():
 
 
 
-func _on_exit_button_pressed() -> void:
+func _on_exit_button_pressed():
 	get_tree().change_scene_to_file("res://main_menu.tscn")
