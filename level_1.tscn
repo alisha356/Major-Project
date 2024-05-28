@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dw8d63d4d3h48" path="res://Assets/Sand Tiles.png" id="5_xlqqe"]
 [ext_resource type="Texture2D" uid="uid://ccpfbyia4drt" path="res://Assets/Mushies.png" id="6_6qeaa"]
 [ext_resource type="Script" path="res://Player.gd" id="7_pbuul"]
-[ext_resource type="Texture2D" uid="uid://cc5pqwy3rpy81" path="res://Assets/Idle.png" id="7_w2v7f"]
+[ext_resource type="Texture2D" uid="uid://d2i3p6qluxebu" path="res://Assets/Idle.png" id="7_w2v7f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jp1jb"]
 texture = ExtResource("2_bko8i")
@@ -403,15 +403,15 @@ sources/2 = SubResource("TileSetAtlasSource_vvrcw")
 sources/3 = SubResource("TileSetAtlasSource_wi6hi")
 sources/4 = SubResource("TileSetAtlasSource_cqfbk")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qp3j1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0ayu"]
 atlas = ExtResource("7_w2v7f")
-region = Rect2(0, 0, 64, 64)
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cgya6"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qp3j1")
+"texture": SubResource("AtlasTexture_p0ayu")
 }],
 "loop": true,
 "name": &"Idle",
@@ -419,8 +419,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sp1ic"]
-radius = 27.9999
-height = 64.0
+radius = 14.0
+height = 30.0002
 
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_yrobd")
@@ -468,7 +468,7 @@ sprite_frames = SubResource("SpriteFrames_cgya6")
 animation = &"Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(312, 216)
+position = Vector2(312, 214)
 rotation = -1.57069
 shape = SubResource("CapsuleShape2D_sp1ic")
 
