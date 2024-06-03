@@ -7,10 +7,10 @@
 script = ExtResource("1_alnx1")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -32.0
-offset_top = -29.0
-offset_right = 1168.0
-offset_bottom = 663.0
+offset_left = -622.0
+offset_top = -483.0
+offset_right = 1765.0
+offset_bottom = 1053.0
 color = Color(0.721569, 0.929412, 1, 1)
 
 [node name="Start Button" type="Button" parent="."]
@@ -23,5 +23,8 @@ text = "Start"
 [node name="Title" type="Sprite2D" parent="."]
 position = Vector2(587, 240)
 texture = ExtResource("2_mpnys")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 325)
 
 [connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
