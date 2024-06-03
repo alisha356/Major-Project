@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://0hlsh4jgdmx8"]
+[gd_scene load_steps=3 format=3 uid="uid://0hlsh4jgdmx8"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_alnx1"]
+[ext_resource type="Texture2D" uid="uid://rfcbjvkps3y6" path="res://Assets/Title.png" id="2_mpnys"]
 
 [node name="Main Menu" type="Node2D"]
 script = ExtResource("1_alnx1")
@@ -10,16 +11,7 @@ offset_left = -32.0
 offset_top = -29.0
 offset_right = 1168.0
 offset_bottom = 663.0
-color = Color(0.11692, 0.182531, 0.4134, 1)
-
-[node name="Title" type="Label" parent="."]
-offset_top = 217.0
-offset_right = 1153.0
-offset_bottom = 256.0
-theme_type_variation = &"HeaderLarge"
-text = "2D Platformer"
-horizontal_alignment = 1
-vertical_alignment = 1
+color = Color(0.721569, 0.929412, 1, 1)
 
 [node name="Start Button" type="Button" parent="."]
 offset_left = 553.0
@@ -27,5 +19,9 @@ offset_top = 312.0
 offset_right = 599.0
 offset_bottom = 343.0
 text = "Start"
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(587, 240)
+texture = ExtResource("2_mpnys")
 
 [connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
