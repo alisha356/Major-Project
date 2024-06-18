@@ -1,27 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://0hlsh4jgdmx8"]
+[gd_scene load_steps=4 format=3 uid="uid://0hlsh4jgdmx8"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_alnx1"]
+[ext_resource type="Texture2D" uid="uid://cqtuo3w2smev1" path="res://Assets/Grassland Background.png" id="2_8knxl"]
 [ext_resource type="Texture2D" uid="uid://rfcbjvkps3y6" path="res://Assets/Title.png" id="2_mpnys"]
 
 [node name="Main Menu" type="Node2D"]
 script = ExtResource("1_alnx1")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -622.0
-offset_top = -483.0
-offset_right = 1765.0
-offset_bottom = 1053.0
-color = Color(0.721569, 0.929412, 1, 1)
+[node name="GrasslandBackground" type="Sprite2D" parent="."]
+position = Vector2(573, 281)
+scale = Vector2(2.33008, 2.97656)
+texture = ExtResource("2_8knxl")
 
 [node name="Start Button" type="Button" parent="."]
-offset_left = 553.0
-offset_top = 312.0
-offset_right = 599.0
-offset_bottom = 343.0
+offset_left = 511.0
+offset_top = 394.0
+offset_right = 639.0
+offset_bottom = 481.0
+theme_override_font_sizes/font_size = 39
 text = "Start"
+icon_alignment = 1
 
 [node name="Title" type="Sprite2D" parent="."]
-position = Vector2(587, 240)
+position = Vector2(575.874, 242.5)
+scale = Vector2(2.00901, 2.00901)
 texture = ExtResource("2_mpnys")
 
 [node name="Camera2D" type="Camera2D" parent="."]

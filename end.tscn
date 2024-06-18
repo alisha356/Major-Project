@@ -1,32 +1,34 @@
-[gd_scene load_steps=4 format=3 uid="uid://cksuir11xybtx"]
+[gd_scene load_steps=5 format=3 uid="uid://cksuir11xybtx"]
 
 [ext_resource type="Script" path="res://end.gd" id="1_ojlvn"]
 [ext_resource type="Texture2D" uid="uid://dt30rudi40jqn" path="res://Assets/Congrats.png" id="1_pu4ae"]
 [ext_resource type="Texture2D" uid="uid://bo00c8f37gx4l" path="res://Assets/Win.png" id="2_g0ddm"]
+[ext_resource type="Texture2D" uid="uid://cqtuo3w2smev1" path="res://Assets/Grassland Background.png" id="2_kpim3"]
 
 [node name="End" type="Node2D"]
 script = ExtResource("1_ojlvn")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -607.0
-offset_top = -427.0
-offset_right = 1810.0
-offset_bottom = 1120.0
-color = Color(0.721569, 0.929412, 1, 1)
+[node name="GrasslandBackground" type="Sprite2D" parent="."]
+position = Vector2(573, 281)
+scale = Vector2(2.33008, 2.97656)
+texture = ExtResource("2_kpim3")
 
 [node name="Congrats" type="Sprite2D" parent="."]
-position = Vector2(586, 215)
+position = Vector2(581.974, 186.5)
+scale = Vector2(1.73077, 1.73077)
 texture = ExtResource("1_pu4ae")
 
 [node name="Win" type="Sprite2D" parent="."]
-position = Vector2(578, 311)
+position = Vector2(567.771, 320.159)
+scale = Vector2(2.19182, 2.19182)
 texture = ExtResource("2_g0ddm")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 544.0
-offset_top = 392.0
-offset_right = 609.0
-offset_bottom = 423.0
+offset_left = 521.0
+offset_top = 412.0
+offset_right = 639.0
+offset_bottom = 470.0
+theme_override_font_sizes/font_size = 25
 text = "Restart"
 
 [node name="Camera2D" type="Camera2D" parent="."]
