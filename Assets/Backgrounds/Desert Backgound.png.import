@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqtuo3w2smev1"
-path="res://.godot/imported/Grassland Background.png-33faf298d39f0de7ee7b13583b0034a8.ctex"
+uid="uid://e1be71c5ghtn"
+path="res://.godot/imported/Desert Backgound.png-f5a536e8f275ec64397e6c7526fe80f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Grassland Background.png"
-dest_files=["res://.godot/imported/Grassland Background.png-33faf298d39f0de7ee7b13583b0034a8.ctex"]
+source_file="res://Assets/Backgrounds/Desert Backgound.png"
+dest_files=["res://.godot/imported/Desert Backgound.png-f5a536e8f275ec64397e6c7526fe80f6.ctex"]
 
 [params]
 

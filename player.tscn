@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcqjsfx4cduhi"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_qsnik"]
+[ext_resource type="Texture2D" uid="uid://d2i3p6qluxebu" path="res://Assets/Idle.png" id="2_0cc7i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0ayu"]
+atlas = ExtResource("2_0cc7i")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vuhse"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p0ayu")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qwvqh"]
+radius = 14.0
+height = 30.0002
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(-824, 476)
+script = ExtResource("1_qsnik")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(312, 217)
+zoom = Vector2(2, 2)
+
+[node name="Exit Button" type="Button" parent="Camera2D"]
+offset_left = -274.0
+offset_top = -148.0
+offset_right = -253.0
+offset_bottom = -129.0
+theme_override_font_sizes/font_size = 9
+text = "Exit"
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(312, 212)
+sprite_frames = SubResource("SpriteFrames_vuhse")
+animation = &"Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(312, 214)
+rotation = -1.57069
+shape = SubResource("CapsuleShape2D_qwvqh")

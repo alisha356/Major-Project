@@ -1,8 +1,8 @@
 [gd_scene load_steps=24 format=3 uid="uid://cy4t234s1vtll"]
 
 [ext_resource type="Script" path="res://level_1.gd" id="1_yrobd"]
-[ext_resource type="Texture2D" uid="uid://cqtuo3w2smev1" path="res://Assets/Grassland Background.png" id="2_0iabt"]
 [ext_resource type="Texture2D" uid="uid://m5mai56aowxk" path="res://Assets/Castle Tiles.png" id="2_bko8i"]
+[ext_resource type="Texture2D" uid="uid://cqtuo3w2smev1" path="res://Assets/Backgrounds/Grassland Background.png" id="2_ycaub"]
 [ext_resource type="Texture2D" uid="uid://bdn66gfxe73ga" path="res://Assets/Dirt Tiles.png" id="3_dp2ru"]
 [ext_resource type="Texture2D" uid="uid://l5w5xdtlwamk" path="res://Assets/Arrow.png" id="3_w2876"]
 [ext_resource type="Texture2D" uid="uid://birlm40hl62dp" path="res://Assets/Grass Tiles.png" id="4_754rd"]
@@ -445,35 +445,24 @@ height = 30.0002
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_yrobd")
 
-[node name="GrasslandBackground7" type="Sprite2D" parent="."]
-position = Vector2(1453, -110)
-scale = Vector2(1.28809, 1.28809)
-texture = ExtResource("2_0iabt")
-
-[node name="GrasslandBackground6" type="Sprite2D" parent="."]
-position = Vector2(134, -112)
-scale = Vector2(1.28809, 1.28809)
-texture = ExtResource("2_0iabt")
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -512.0
+offset_top = -440.0
+offset_right = 2112.0
+offset_bottom = 152.0
+color = Color(0.815686, 0.956863, 0.968627, 1)
 
 [node name="GrasslandBackground3" type="Sprite2D" parent="."]
-position = Vector2(1451, 104)
-scale = Vector2(1.28809, 1.28809)
-texture = ExtResource("2_0iabt")
+position = Vector2(2040, 392)
+texture = ExtResource("2_ycaub")
+
+[node name="GrasslandBackground2" type="Sprite2D" parent="."]
+position = Vector2(1016, 392)
+texture = ExtResource("2_ycaub")
 
 [node name="GrasslandBackground" type="Sprite2D" parent="."]
-position = Vector2(1453, 320)
-scale = Vector2(1.28809, 1.28809)
-texture = ExtResource("2_0iabt")
-
-[node name="GrasslandBackground5" type="Sprite2D" parent="."]
-position = Vector2(132, 104)
-scale = Vector2(1.28809, 1.28809)
-texture = ExtResource("2_0iabt")
-
-[node name="GrasslandBackground4" type="Sprite2D" parent="."]
-position = Vector2(134, 322)
-scale = Vector2(1.28809, 1.28809)
-texture = ExtResource("2_0iabt")
+position = Vector2(-8, 392)
+texture = ExtResource("2_ycaub")
 
 [node name="Arrow" type="Sprite2D" parent="."]
 position = Vector2(1448, 27)

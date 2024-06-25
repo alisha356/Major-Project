@@ -2,16 +2,16 @@
 
 [ext_resource type="Script" path="res://end.gd" id="1_ojlvn"]
 [ext_resource type="Texture2D" uid="uid://dt30rudi40jqn" path="res://Assets/Congrats.png" id="1_pu4ae"]
+[ext_resource type="Texture2D" uid="uid://cqtuo3w2smev1" path="res://Assets/Backgrounds/Grassland Background.png" id="2_e22b2"]
 [ext_resource type="Texture2D" uid="uid://bo00c8f37gx4l" path="res://Assets/Win.png" id="2_g0ddm"]
-[ext_resource type="Texture2D" uid="uid://cqtuo3w2smev1" path="res://Assets/Grassland Background.png" id="2_kpim3"]
 
 [node name="End" type="Node2D"]
 script = ExtResource("1_ojlvn")
 
 [node name="GrasslandBackground" type="Sprite2D" parent="."]
-position = Vector2(573, 281)
-scale = Vector2(2.33008, 2.97656)
-texture = ExtResource("2_kpim3")
+position = Vector2(573.5, 324.5)
+scale = Vector2(1.14746, 1.29883)
+texture = ExtResource("2_e22b2")
 
 [node name="Congrats" type="Sprite2D" parent="."]
 position = Vector2(581.974, 186.5)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djli5gw4qdvap"
-path="res://.godot/imported/Shroom Background.png-9bb2c91f0b0d056b4eb6ced26e577b7d.ctex"
+path="res://.godot/imported/Shroom Background.png-0a5cc83284204a8ddccaffc5cb0e8f30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Shroom Background.png"
-dest_files=["res://.godot/imported/Shroom Background.png-9bb2c91f0b0d056b4eb6ced26e577b7d.ctex"]
+source_file="res://Assets/Backgrounds/Shroom Background.png"
+dest_files=["res://.godot/imported/Shroom Background.png-0a5cc83284204a8ddccaffc5cb0e8f30.ctex"]
 
 [params]
 

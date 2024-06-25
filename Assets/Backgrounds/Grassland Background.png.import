@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ew6peumcqrdt"
-path="res://.godot/imported/Castle Background.png-1ed47ab2295ba3c45eaac6c06c5a9945.ctex"
+uid="uid://cqtuo3w2smev1"
+path="res://.godot/imported/Grassland Background.png-5a859f347970973253690bdae04f19ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Castle Background.png"
-dest_files=["res://.godot/imported/Castle Background.png-1ed47ab2295ba3c45eaac6c06c5a9945.ctex"]
+source_file="res://Assets/Backgrounds/Grassland Background.png"
+dest_files=["res://.godot/imported/Grassland Background.png-5a859f347970973253690bdae04f19ef.ctex"]
 
 [params]
 

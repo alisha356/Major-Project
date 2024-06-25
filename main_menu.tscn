@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://0hlsh4jgdmx8"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_alnx1"]
-[ext_resource type="Texture2D" uid="uid://cqtuo3w2smev1" path="res://Assets/Grassland Background.png" id="2_8knxl"]
 [ext_resource type="Texture2D" uid="uid://rfcbjvkps3y6" path="res://Assets/Title.png" id="2_mpnys"]
+[ext_resource type="Texture2D" uid="uid://cqtuo3w2smev1" path="res://Assets/Backgrounds/Grassland Background.png" id="3_p6f1s"]
 
 [node name="Main Menu" type="Node2D"]
 script = ExtResource("1_alnx1")
 
-[node name="GrasslandBackground" type="Sprite2D" parent="."]
-position = Vector2(573, 281)
-scale = Vector2(2.33008, 2.97656)
-texture = ExtResource("2_8knxl")
+[node name="GrasslandBackground2" type="Sprite2D" parent="."]
+position = Vector2(576.5, 329)
+scale = Vector2(1.14746, 1.31641)
+texture = ExtResource("3_p6f1s")
 
 [node name="Start Button" type="Button" parent="."]
 offset_left = 511.0

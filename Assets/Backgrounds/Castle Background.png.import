@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://e1be71c5ghtn"
-path="res://.godot/imported/Desert Backgound.png-314e41b391c5fce44b78face946b71f3.ctex"
+uid="uid://ew6peumcqrdt"
+path="res://.godot/imported/Castle Background.png-00be0718893817008f87373f50febf97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Desert Backgound.png"
-dest_files=["res://.godot/imported/Desert Backgound.png-314e41b391c5fce44b78face946b71f3.ctex"]
+source_file="res://Assets/Backgrounds/Castle Background.png"
+dest_files=["res://.godot/imported/Castle Background.png-00be0718893817008f87373f50febf97.ctex"]
 
 [params]
 
