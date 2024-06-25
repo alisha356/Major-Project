@@ -14,20 +14,20 @@ scale = Vector2(1.14746, 1.29883)
 texture = ExtResource("2_e22b2")
 
 [node name="Congrats" type="Sprite2D" parent="."]
-position = Vector2(581.974, 186.5)
-scale = Vector2(1.73077, 1.73077)
+position = Vector2(569, 169)
+scale = Vector2(1.30769, 1.30769)
 texture = ExtResource("1_pu4ae")
 
 [node name="Win" type="Sprite2D" parent="."]
-position = Vector2(567.771, 320.159)
-scale = Vector2(2.19182, 2.19182)
+position = Vector2(577, 297)
+scale = Vector2(1.49999, 1.49999)
 texture = ExtResource("2_g0ddm")
 
 [node name="Button" type="Button" parent="."]
 offset_left = 521.0
-offset_top = 412.0
+offset_top = 376.0
 offset_right = 639.0
-offset_bottom = 470.0
+offset_bottom = 434.0
 theme_override_font_sizes/font_size = 25
 text = "Restart"
 

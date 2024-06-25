@@ -531,14 +531,14 @@ script = ExtResource("7_pbuul")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(312, 217)
-zoom = Vector2(2, 2)
+zoom = Vector2(1.5, 1.5)
 
 [node name="Exit Button" type="Button" parent="Player/Camera2D"]
-offset_left = -274.0
-offset_top = -148.0
-offset_right = -253.0
-offset_bottom = -129.0
-theme_override_font_sizes/font_size = 9
+offset_left = -375.0
+offset_top = -208.0
+offset_right = -322.0
+offset_bottom = -178.0
+theme_override_font_sizes/font_size = 15
 text = "Exit"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
