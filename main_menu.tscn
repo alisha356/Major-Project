@@ -7,26 +7,35 @@
 [node name="Main Menu" type="Node2D"]
 script = ExtResource("1_alnx1")
 
-[node name="GrasslandBackground2" type="Sprite2D" parent="."]
+[node name="GrasslandBackground" type="Sprite2D" parent="."]
 position = Vector2(576.5, 329)
 scale = Vector2(1.14746, 1.31641)
 texture = ExtResource("3_p6f1s")
 
 [node name="Start Button" type="Button" parent="."]
-offset_left = 529.0
+offset_left = 516.0
 offset_top = 339.0
-offset_right = 628.0
+offset_right = 615.0
 offset_bottom = 401.0
 theme_override_font_sizes/font_size = 30
 text = "Start"
 icon_alignment = 1
 
 [node name="Title" type="Sprite2D" parent="."]
-position = Vector2(576, 210)
-scale = Vector2(1.45946, 1.45946)
+position = Vector2(576.82, 209.816)
+scale = Vector2(1.58227, 1.58227)
 texture = ExtResource("2_mpnys")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 325)
 
+[node name="Button" type="Button" parent="."]
+offset_left = 473.0
+offset_top = 416.0
+offset_right = 663.0
+offset_bottom = 473.0
+theme_override_font_sizes/font_size = 25
+text = "How to play"
+
 [connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

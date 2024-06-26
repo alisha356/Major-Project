@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca7p6dd7u7fs2"]
+
+[ext_resource type="Texture2D" uid="uid://cqtuo3w2smev1" path="res://Assets/Backgrounds/Grassland Background.png" id="1_au78v"]
+[ext_resource type="Script" path="res://how_to.gd" id="1_wvj77"]
+[ext_resource type="Texture2D" uid="uid://bqh1tfivs26i7" path="res://Assets/How to.png" id="2_g7tvw"]
+
+[node name="How to" type="Node2D"]
+script = ExtResource("1_wvj77")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 325)
+
+[node name="GrasslandBackground" type="Sprite2D" parent="."]
+position = Vector2(576.5, 329)
+scale = Vector2(1.14746, 1.31641)
+texture = ExtResource("1_au78v")
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(589, 74)
+texture = ExtResource("2_g7tvw")
+
+[node name="Left" type="Button" parent="."]
+offset_left = 397.0
+offset_top = 186.0
+offset_right = 742.0
+offset_bottom = 217.0
+text = "Use the left arrow or the A key to move left."
+
+[node name="RIght" type="Button" parent="."]
+offset_left = 386.0
+offset_top = 276.0
+offset_right = 754.0
+offset_bottom = 307.0
+text = "Use the right arrow or the D key to move right."
+
+[node name="Jump" type="Button" parent="."]
+offset_left = 357.0
+offset_top = 367.0
+offset_right = 785.0
+offset_bottom = 398.0
+text = "Use the up arrow, the W key, or the space bar to jump."
+
+[node name="Goal" type="Button" parent="."]
+offset_left = 275.0
+offset_top = 456.0
+offset_right = 874.0
+offset_bottom = 510.0
+text = "The goal of the game is to get across all the platforms to the door at the end.
+There are three levels for you to complete... Good luck!"
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 536.0
+offset_top = 554.0
+offset_right = 610.0
+offset_bottom = 603.0
+theme_override_font_sizes/font_size = 25
+text = "Exit"
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
