@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxyqgx6qid4qd"
-path="res://.godot/imported/Jumping.png-c8e294301d2decbcc4dac1bd44edd826.ctex"
+uid="uid://dfhklen3g1thx"
+path="res://.godot/imported/Orange Idle.png-44aa1c2a705d0da074ea66e0f6e96da7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Jumping.png"
-dest_files=["res://.godot/imported/Jumping.png-c8e294301d2decbcc4dac1bd44edd826.ctex"]
+source_file="res://Assets/Orange Idle.png"
+dest_files=["res://.godot/imported/Orange Idle.png-44aa1c2a705d0da074ea66e0f6e96da7.ctex"]
 
 [params]
 

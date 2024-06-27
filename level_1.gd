@@ -18,3 +18,8 @@ func _on_exit_button_pressed():
 func _on_door_body_entered(body):
 	if body == $Player:
 		get_tree().change_scene_to_file("res://level_2.tscn")
+
+
+func _on_respawn_point_body_entered(body):
+	if body == $Player:
+		get_tree().change_scene_to_file("res://level_1.tscn")

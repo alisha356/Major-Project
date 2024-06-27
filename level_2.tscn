@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bw2h5ipyxse6x"]
+[gd_scene load_steps=24 format=3 uid="uid://bw2h5ipyxse6x"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_ieoma"]
 [ext_resource type="Script" path="res://level_2.gd" id="1_sxb2y"]
@@ -445,6 +445,9 @@ animations = [{
 radius = 14.0
 height = 30.0002
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ilcv"]
+size = Vector2(1497, 66)
+
 [node name="Level 2" type="Node2D"]
 script = ExtResource("1_sxb2y")
 
@@ -508,5 +511,12 @@ position = Vector2(312, 214)
 rotation = -1.57069
 shape = SubResource("CapsuleShape2D_qwvqh")
 
+[node name="Respawn point" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Respawn point"]
+position = Vector2(748.5, 720)
+shape = SubResource("RectangleShape2D_1ilcv")
+
 [connection signal="body_entered" from="End Door" to="." method="_on_area_2d_body_entered"]
 [connection signal="pressed" from="Player/Camera2D/Exit Button" to="." method="_on_exit_button_pressed"]
+[connection signal="body_entered" from="Respawn point" to="." method="_on_respawn_point_body_entered"]

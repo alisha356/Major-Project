@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cy4t234s1vtll"]
+[gd_scene load_steps=25 format=3 uid="uid://cy4t234s1vtll"]
 
 [ext_resource type="Script" path="res://level_1.gd" id="1_yrobd"]
 [ext_resource type="Texture2D" uid="uid://m5mai56aowxk" path="res://Assets/Castle Tiles.png" id="2_bko8i"]
@@ -442,6 +442,9 @@ animations = [{
 radius = 14.0
 height = 30.0002
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jo07r"]
+size = Vector2(2048, 66)
+
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_yrobd")
 
@@ -468,46 +471,6 @@ texture = ExtResource("2_ycaub")
 position = Vector2(1448, 27)
 texture = ExtResource("3_w2876")
 
-[node name="Arrow2" type="Sprite2D" parent="."]
-position = Vector2(1448, 580)
-rotation = 1.5486
-texture = ExtResource("3_w2876")
-
-[node name="Arrow3" type="Sprite2D" parent="."]
-position = Vector2(1696, 580)
-rotation = 1.5486
-texture = ExtResource("3_w2876")
-
-[node name="Arrow4" type="Sprite2D" parent="."]
-position = Vector2(1944, 580)
-rotation = 1.5486
-texture = ExtResource("3_w2876")
-
-[node name="Arrow5" type="Sprite2D" parent="."]
-position = Vector2(759, 580)
-rotation = 1.5486
-texture = ExtResource("3_w2876")
-
-[node name="Arrow6" type="Sprite2D" parent="."]
-position = Vector2(1000, 580)
-rotation = 1.5486
-texture = ExtResource("3_w2876")
-
-[node name="Arrow8" type="Sprite2D" parent="."]
-position = Vector2(272, 580)
-rotation = 1.98004
-texture = ExtResource("3_w2876")
-
-[node name="Arrow9" type="Sprite2D" parent="."]
-position = Vector2(528, 580)
-rotation = 1.5486
-texture = ExtResource("3_w2876")
-
-[node name="Arrow7" type="Sprite2D" parent="."]
-position = Vector2(1224, 580)
-rotation = 1.5486
-texture = ExtResource("3_w2876")
-
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
 tile_set = SubResource("TileSet_mq3wb")
@@ -526,7 +489,7 @@ position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_sygyk")
 
 [node name="Player" type="CharacterBody2D" parent="."]
-position = Vector2(-582, 362)
+position = Vector2(-582, 412)
 script = ExtResource("7_pbuul")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -551,5 +514,12 @@ position = Vector2(312, 214)
 rotation = -1.57069
 shape = SubResource("CapsuleShape2D_sp1ic")
 
+[node name="Respawn point" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Respawn point"]
+position = Vector2(1145, 657)
+shape = SubResource("RectangleShape2D_jo07r")
+
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
 [connection signal="pressed" from="Player/Camera2D/Exit Button" to="." method="_on_exit_button_pressed"]
+[connection signal="body_entered" from="Respawn point" to="." method="_on_respawn_point_body_entered"]
