@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://cy4t234s1vtll"]
+[gd_scene load_steps=26 format=3 uid="uid://cy4t234s1vtll"]
 
 [ext_resource type="Script" path="res://level_1.gd" id="1_yrobd"]
 [ext_resource type="Texture2D" uid="uid://m5mai56aowxk" path="res://Assets/Castle Tiles.png" id="2_bko8i"]
@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://Player.gd" id="7_pbuul"]
 [ext_resource type="Texture2D" uid="uid://d2i3p6qluxebu" path="res://Assets/Idle.png" id="7_w2v7f"]
 [ext_resource type="Texture2D" uid="uid://b6rth3fx2glpw" path="res://Assets/Door.png" id="11_up68l"]
+[ext_resource type="PackedScene" uid="uid://dgagijpmld8ec" path="res://coin.tscn" id="12_polvb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jp1jb"]
 texture = ExtResource("2_bko8i")
@@ -435,7 +436,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 5.0
+"speed": 1.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sp1ic"]
@@ -508,6 +509,7 @@ text = "Exit"
 position = Vector2(312, 212)
 sprite_frames = SubResource("SpriteFrames_cgya6")
 animation = &"Idle"
+frame_progress = 0.505529
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(312, 214)
@@ -519,6 +521,30 @@ shape = SubResource("CapsuleShape2D_sp1ic")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Respawn point"]
 position = Vector2(1145, 657)
 shape = SubResource("RectangleShape2D_jo07r")
+
+[node name="Coin" parent="." instance=ExtResource("12_polvb")]
+position = Vector2(96, 544)
+
+[node name="Coin2" parent="." instance=ExtResource("12_polvb")]
+position = Vector2(344, 384)
+
+[node name="Coin3" parent="." instance=ExtResource("12_polvb")]
+position = Vector2(464, 232)
+
+[node name="Coin4" parent="." instance=ExtResource("12_polvb")]
+position = Vector2(696, 64)
+
+[node name="Coin5" parent="." instance=ExtResource("12_polvb")]
+position = Vector2(1056, 96)
+
+[node name="Coin6" parent="." instance=ExtResource("12_polvb")]
+position = Vector2(1264, 16)
+
+[node name="Coin7" parent="." instance=ExtResource("12_polvb")]
+position = Vector2(1664, 160)
+
+[node name="Coin8" parent="." instance=ExtResource("12_polvb")]
+position = Vector2(1960, 64)
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
 [connection signal="pressed" from="Player/Camera2D/Exit Button" to="." method="_on_exit_button_pressed"]

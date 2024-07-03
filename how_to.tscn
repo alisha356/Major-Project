@@ -20,33 +20,39 @@ position = Vector2(589, 74)
 texture = ExtResource("2_g7tvw")
 
 [node name="Left" type="Button" parent="."]
-offset_left = 397.0
-offset_top = 186.0
-offset_right = 742.0
-offset_bottom = 217.0
+offset_left = 404.0
+offset_top = 201.0
+offset_right = 749.0
+offset_bottom = 232.0
 text = "Use the left arrow or the A key to move left."
 
 [node name="RIght" type="Button" parent="."]
-offset_left = 386.0
-offset_top = 276.0
-offset_right = 754.0
-offset_bottom = 307.0
+offset_left = 392.0
+offset_top = 265.0
+offset_right = 760.0
+offset_bottom = 296.0
 text = "Use the right arrow or the D key to move right."
 
 [node name="Jump" type="Button" parent="."]
-offset_left = 357.0
-offset_top = 367.0
-offset_right = 785.0
-offset_bottom = 398.0
+offset_left = 362.0
+offset_top = 332.0
+offset_right = 790.0
+offset_bottom = 363.0
 text = "Use the up arrow, the W key, or the space bar to jump."
 
 [node name="Goal" type="Button" parent="."]
-offset_left = 275.0
-offset_top = 456.0
-offset_right = 874.0
-offset_bottom = 510.0
-text = "The goal of the game is to get across all the platforms to the door at the end.
-There are three levels for you to complete... Good luck!"
+offset_left = 354.0
+offset_top = 396.0
+offset_right = 797.0
+offset_bottom = 427.0
+text = "Collect all of the coins as you jump across the platforms."
+
+[node name="End" type="Button" parent="."]
+offset_left = 360.0
+offset_top = 461.0
+offset_right = 791.0
+offset_bottom = 492.0
+text = "There are three levels for you to complete... Good luck!"
 
 [node name="Exit" type="Button" parent="."]
 offset_left = 536.0
