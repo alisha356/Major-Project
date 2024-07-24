@@ -29,7 +29,7 @@ texture = ExtResource("2_mpnys")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 325)
 
-[node name="Button" type="Button" parent="."]
+[node name="How-to" type="Button" parent="."]
 offset_left = 473.0
 offset_top = 416.0
 offset_right = 663.0
@@ -37,5 +37,13 @@ offset_bottom = 473.0
 theme_override_font_sizes/font_size = 25
 text = "How to play"
 
+[node name="Levels" type="Button" parent="."]
+offset_left = 473.0
+offset_top = 488.0
+offset_right = 663.0
+offset_bottom = 545.0
+theme_override_font_sizes/font_size = 25
+text = "How to play"
+
 [connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="How-to" to="." method="_on_howto_pressed"]

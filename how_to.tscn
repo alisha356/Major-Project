@@ -21,44 +21,58 @@ texture = ExtResource("2_g7tvw")
 
 [node name="Left" type="Button" parent="."]
 offset_left = 404.0
-offset_top = 201.0
+offset_top = 177.0
 offset_right = 749.0
-offset_bottom = 232.0
+offset_bottom = 208.0
 text = "Use the left arrow or the A key to move left."
 
 [node name="RIght" type="Button" parent="."]
 offset_left = 392.0
-offset_top = 265.0
+offset_top = 233.0
 offset_right = 760.0
-offset_bottom = 296.0
+offset_bottom = 264.0
 text = "Use the right arrow or the D key to move right."
 
 [node name="Jump" type="Button" parent="."]
 offset_left = 362.0
-offset_top = 332.0
+offset_top = 292.0
 offset_right = 790.0
-offset_bottom = 363.0
+offset_bottom = 323.0
 text = "Use the up arrow, the W key, or the space bar to jump."
 
 [node name="Goal" type="Button" parent="."]
 offset_left = 354.0
-offset_top = 396.0
+offset_top = 348.0
 offset_right = 797.0
-offset_bottom = 427.0
+offset_bottom = 379.0
 text = "Collect all of the coins as you jump across the platforms."
+
+[node name="Ground" type="Button" parent="."]
+offset_left = 421.0
+offset_top = 405.0
+offset_right = 730.0
+offset_bottom = 436.0
+text = "Make sure you don't touch the ground!"
+
+[node name="Arrows" type="Button" parent="."]
+offset_left = 367.0
+offset_top = 461.0
+offset_right = 785.0
+offset_bottom = 492.0
+text = "The arrows will guide you where you might get stuck."
 
 [node name="End" type="Button" parent="."]
 offset_left = 360.0
-offset_top = 461.0
+offset_top = 517.0
 offset_right = 791.0
-offset_bottom = 492.0
+offset_bottom = 548.0
 text = "There are three levels for you to complete... Good luck!"
 
 [node name="Exit" type="Button" parent="."]
 offset_left = 536.0
-offset_top = 554.0
+offset_top = 570.0
 offset_right = 610.0
-offset_bottom = 603.0
+offset_bottom = 619.0
 theme_override_font_sizes/font_size = 25
 text = "Exit"
 
