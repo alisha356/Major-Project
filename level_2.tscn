@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Player.gd" id="1_ieoma"]
 [ext_resource type="Script" path="res://level_2.gd" id="1_sxb2y"]
 [ext_resource type="Texture2D" uid="uid://djli5gw4qdvap" path="res://Assets/Backgrounds/Shroom Background.png" id="2_8lwk3"]
-[ext_resource type="Texture2D" uid="uid://d2i3p6qluxebu" path="res://Assets/Idle.png" id="2_hdma8"]
+[ext_resource type="Texture2D" path="res://Assets/Idle.png" id="2_hdma8"]
 [ext_resource type="Texture2D" uid="uid://birlm40hl62dp" path="res://Assets/Grass Tiles.png" id="3_ept2s"]
 [ext_resource type="Texture2D" uid="uid://m5mai56aowxk" path="res://Assets/Castle Tiles.png" id="4_8c77u"]
 [ext_resource type="Texture2D" uid="uid://bdn66gfxe73ga" path="res://Assets/Dirt Tiles.png" id="5_m8l5s"]

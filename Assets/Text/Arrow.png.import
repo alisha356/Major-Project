@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6b31bua8uvox"
-path="res://.godot/imported/Pink Idle.png-6065f2df34f399939216fc4dc06b91f9.ctex"
+uid="uid://6wehnyhllgp2"
+path="res://.godot/imported/Arrow.png-5ab77932645865a0c950690cebdd2516.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pink Idle.png"
-dest_files=["res://.godot/imported/Pink Idle.png-6065f2df34f399939216fc4dc06b91f9.ctex"]
+source_file="res://Assets/Text/Arrow.png"
+dest_files=["res://.godot/imported/Arrow.png-5ab77932645865a0c950690cebdd2516.ctex"]
 
 [params]
 

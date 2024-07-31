@@ -1,49 +1,50 @@
 [gd_scene load_steps=4 format=3 uid="uid://0hlsh4jgdmx8"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_alnx1"]
-[ext_resource type="Texture2D" uid="uid://rfcbjvkps3y6" path="res://Assets/Title.png" id="2_mpnys"]
+[ext_resource type="Texture2D" uid="uid://dy4afx7wk350m" path="res://Assets/Text/Title.png" id="3_ob2dn"]
 [ext_resource type="Texture2D" uid="uid://cqtuo3w2smev1" path="res://Assets/Backgrounds/Grassland Background.png" id="3_p6f1s"]
 
 [node name="Main Menu" type="Node2D"]
 script = ExtResource("1_alnx1")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 325)
 
 [node name="GrasslandBackground" type="Sprite2D" parent="."]
 position = Vector2(576.5, 329)
 scale = Vector2(1.14746, 1.31641)
 texture = ExtResource("3_p6f1s")
 
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(579, 210)
+scale = Vector2(1.59109, 1.54955)
+texture = ExtResource("3_ob2dn")
+
 [node name="Start Button" type="Button" parent="."]
-offset_left = 522.0
-offset_top = 339.0
-offset_right = 621.0
-offset_bottom = 401.0
+offset_left = 527.0
+offset_top = 344.0
+offset_right = 626.0
+offset_bottom = 406.0
 theme_override_font_sizes/font_size = 30
 text = "Start"
 icon_alignment = 1
 
-[node name="Title" type="Sprite2D" parent="."]
-position = Vector2(576.82, 209.816)
-scale = Vector2(1.58227, 1.58227)
-texture = ExtResource("2_mpnys")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(576, 325)
-
 [node name="How-to" type="Button" parent="."]
-offset_left = 473.0
-offset_top = 416.0
-offset_right = 663.0
-offset_bottom = 473.0
+offset_left = 480.0
+offset_top = 418.0
+offset_right = 670.0
+offset_bottom = 475.0
 theme_override_font_sizes/font_size = 25
 text = "How to play"
 
 [node name="Levels" type="Button" parent="."]
-offset_left = 473.0
+offset_left = 465.0
 offset_top = 488.0
-offset_right = 663.0
+offset_right = 686.0
 offset_bottom = 545.0
 theme_override_font_sizes/font_size = 25
-text = "How to play"
+text = "Levels Selection"
 
 [connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="How-to" to="." method="_on_howto_pressed"]
+[connection signal="pressed" from="Levels" to="." method="_on_levels_pressed"]

@@ -4,12 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://m5mai56aowxk" path="res://Assets/Castle Tiles.png" id="2_bko8i"]
 [ext_resource type="Texture2D" uid="uid://cqtuo3w2smev1" path="res://Assets/Backgrounds/Grassland Background.png" id="2_ycaub"]
 [ext_resource type="Texture2D" uid="uid://bdn66gfxe73ga" path="res://Assets/Dirt Tiles.png" id="3_dp2ru"]
-[ext_resource type="Texture2D" uid="uid://l5w5xdtlwamk" path="res://Assets/Arrow.png" id="3_w2876"]
+[ext_resource type="Texture2D" uid="uid://6wehnyhllgp2" path="res://Assets/Text/Arrow.png" id="3_uobsx"]
 [ext_resource type="Texture2D" uid="uid://birlm40hl62dp" path="res://Assets/Grass Tiles.png" id="4_754rd"]
 [ext_resource type="Texture2D" uid="uid://dw8d63d4d3h48" path="res://Assets/Sand Tiles.png" id="5_xlqqe"]
 [ext_resource type="Texture2D" uid="uid://ccpfbyia4drt" path="res://Assets/Mushies.png" id="6_6qeaa"]
 [ext_resource type="Script" path="res://Player.gd" id="7_pbuul"]
-[ext_resource type="Texture2D" uid="uid://d2i3p6qluxebu" path="res://Assets/Idle.png" id="7_w2v7f"]
+[ext_resource type="Texture2D" path="res://Assets/Idle.png" id="7_w2v7f"]
 [ext_resource type="Texture2D" uid="uid://b6rth3fx2glpw" path="res://Assets/Door.png" id="11_up68l"]
 [ext_resource type="PackedScene" uid="uid://dgagijpmld8ec" path="res://coin.tscn" id="12_polvb"]
 
@@ -470,7 +470,7 @@ texture = ExtResource("2_ycaub")
 
 [node name="Arrow" type="Sprite2D" parent="."]
 position = Vector2(1448, 27)
-texture = ExtResource("3_w2876")
+texture = ExtResource("3_uobsx")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -506,7 +506,7 @@ theme_override_font_sizes/font_size = 15
 text = "Exit"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
-position = Vector2(312, 212)
+position = Vector2(312, 216)
 sprite_frames = SubResource("SpriteFrames_cgya6")
 animation = &"Idle"
 frame_progress = 0.505529
