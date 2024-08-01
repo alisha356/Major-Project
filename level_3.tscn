@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://c7fk0olaqluy0"]
+[gd_scene load_steps=29 format=3 uid="uid://c7fk0olaqluy0"]
 
 [ext_resource type="Script" path="res://level_3.gd" id="1_cisep"]
 [ext_resource type="Texture2D" uid="uid://m5mai56aowxk" path="res://Assets/Castle Tiles.png" id="1_evhud"]
@@ -9,8 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://ccpfbyia4drt" path="res://Assets/Mushies.png" id="5_hoc0b"]
 [ext_resource type="Script" path="res://Player.gd" id="6_khja4"]
 [ext_resource type="Texture2D" uid="uid://b6rth3fx2glpw" path="res://Assets/Door.png" id="7_fkdg4"]
-[ext_resource type="Texture2D" path="res://Assets/Idle.png" id="7_gkgam"]
+[ext_resource type="Texture2D" path="res://Assets/Orange Idle.png" id="10_eu8ku"]
 [ext_resource type="PackedScene" uid="uid://dgagijpmld8ec" path="res://coin.tscn" id="11_40n1e"]
+[ext_resource type="Texture2D" uid="uid://b6b31bua8uvox" path="res://Assets/Pink Idle.png" id="11_neqtw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6pq7d"]
 texture = ExtResource("1_evhud")
@@ -427,18 +428,40 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_plcb3"]
 size = Vector2(16, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_p0ayu"]
-atlas = ExtResource("7_gkgam")
+[sub_resource type="AtlasTexture" id="AtlasTexture_cptmu"]
+atlas = ExtResource("10_eu8ku")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_16jox"]
+atlas = ExtResource("11_neqtw")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kg734"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_p0ayu")
+"texture": SubResource("AtlasTexture_cptmu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_16jox")
 }],
 "loop": true,
 "name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1b6lb"]
+atlas = ExtResource("11_neqtw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1fd1o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1b6lb")
+}],
+"loop": true,
+"name": &"default",
 "speed": 5.0
 }]
 
@@ -447,7 +470,7 @@ radius = 14.0
 height = 30.0002
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_noj5d"]
-size = Vector2(1512, 42)
+size = Vector2(1352, 42)
 
 [node name="Level 3" type="Node2D"]
 script = ExtResource("1_cisep")
@@ -504,12 +527,17 @@ offset_bottom = -175.0
 theme_override_font_sizes/font_size = 15
 text = "Exit"
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+[node name="Orange Player" type="AnimatedSprite2D" parent="Player"]
 position = Vector2(312, 212)
 sprite_frames = SubResource("SpriteFrames_kg734")
 animation = &"Idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+[node name="Pink Player" type="AnimatedSprite2D" parent="Player"]
+visible = false
+position = Vector2(312, 212)
+sprite_frames = SubResource("SpriteFrames_1fd1o")
+
+[node name="Collision" type="CollisionShape2D" parent="Player"]
 position = Vector2(312, 214)
 rotation = -1.57069
 shape = SubResource("CapsuleShape2D_d6du6")
@@ -517,7 +545,7 @@ shape = SubResource("CapsuleShape2D_d6du6")
 [node name="Respawn Point" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Respawn Point"]
-position = Vector2(500, 701)
+position = Vector2(580, 701)
 shape = SubResource("RectangleShape2D_noj5d")
 
 [node name="Coin" parent="." instance=ExtResource("11_40n1e")]
@@ -544,14 +572,14 @@ position = Vector2(208, 128)
 [node name="Coin8" parent="." instance=ExtResource("11_40n1e")]
 position = Vector2(-88, 128)
 
+[node name="Coin9" parent="." instance=ExtResource("11_40n1e")]
+position = Vector2(-8, 128)
+
 [node name="Coin10" parent="." instance=ExtResource("11_40n1e")]
 position = Vector2(-392, 80)
 
 [node name="Coin11" parent="." instance=ExtResource("11_40n1e")]
 position = Vector2(-584, 32)
-
-[node name="Coin9" parent="." instance=ExtResource("11_40n1e")]
-position = Vector2(-8, 128)
 
 [connection signal="body_entered" from="End Door" to="." method="_on_end_door_body_entered"]
 [connection signal="pressed" from="Player/Camera2D/Exit Button" to="." method="_on_exit_button_pressed"]

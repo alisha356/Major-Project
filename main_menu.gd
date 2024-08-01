@@ -1,14 +1,13 @@
 extends Node2D
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float):
-	pass
+	if global.character == "Orange Player":
+		pass
+	elif global.character == "Pink Player":
+		$"Orange Selected".set_visible(false)
+		$"Orange Select".set_visible(true)
+		$"Pink Selected".set_visible(true)
+		$"Pink Select".set_visible(false)
 
 
 func _on_start_button_pressed():
@@ -21,3 +20,20 @@ func _on_howto_pressed():
 
 func _on_levels_pressed():
 	get_tree().change_scene_to_file("res://levels.tscn")
+
+
+func _on_pink_select_pressed():
+	$"Orange Selected".set_visible(false)
+	$"Orange Select".set_visible(true)
+	$"Pink Selected".set_visible(true)
+	$"Pink Select".set_visible(false)
+	global.character = "Pink Player"
+
+func _on_orange_select_pressed():
+	$"Pink Selected".set_visible(false)
+	$"Pink Select".set_visible(true)
+	$"Orange Selected".set_visible(true)
+	$"Orange Select".set_visible(false)
+	global.character = "Orange Player"
+
+

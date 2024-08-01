@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cy4t234s1vtll"]
+[gd_scene load_steps=29 format=3 uid="uid://cy4t234s1vtll"]
 
 [ext_resource type="Script" path="res://level_1.gd" id="1_yrobd"]
 [ext_resource type="Texture2D" uid="uid://m5mai56aowxk" path="res://Assets/Castle Tiles.png" id="2_bko8i"]
@@ -9,8 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://dw8d63d4d3h48" path="res://Assets/Sand Tiles.png" id="5_xlqqe"]
 [ext_resource type="Texture2D" uid="uid://ccpfbyia4drt" path="res://Assets/Mushies.png" id="6_6qeaa"]
 [ext_resource type="Script" path="res://Player.gd" id="7_pbuul"]
-[ext_resource type="Texture2D" path="res://Assets/Idle.png" id="7_w2v7f"]
+[ext_resource type="Texture2D" path="res://Assets/Orange Idle.png" id="11_2pf7c"]
 [ext_resource type="Texture2D" uid="uid://b6rth3fx2glpw" path="res://Assets/Door.png" id="11_up68l"]
+[ext_resource type="Texture2D" uid="uid://b6b31bua8uvox" path="res://Assets/Pink Idle.png" id="12_26h46"]
 [ext_resource type="PackedScene" uid="uid://dgagijpmld8ec" path="res://coin.tscn" id="12_polvb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jp1jb"]
@@ -424,19 +425,34 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sygyk"]
 size = Vector2(16, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_p0ayu"]
-atlas = ExtResource("7_w2v7f")
+[sub_resource type="AtlasTexture" id="AtlasTexture_jcjnh"]
+atlas = ExtResource("11_2pf7c")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cgya6"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_p0ayu")
+"texture": SubResource("AtlasTexture_jcjnh")
 }],
 "loop": true,
 "name": &"Idle",
 "speed": 1.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1b6lb"]
+atlas = ExtResource("12_26h46")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_obte7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1b6lb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sp1ic"]
@@ -505,13 +521,18 @@ offset_bottom = -178.0
 theme_override_font_sizes/font_size = 15
 text = "Exit"
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
-position = Vector2(312, 216)
+[node name="Orange Player" type="AnimatedSprite2D" parent="Player"]
+position = Vector2(312, 212)
 sprite_frames = SubResource("SpriteFrames_cgya6")
 animation = &"Idle"
 frame_progress = 0.505529
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+[node name="Pink Player" type="AnimatedSprite2D" parent="Player"]
+visible = false
+position = Vector2(312, 212)
+sprite_frames = SubResource("SpriteFrames_obte7")
+
+[node name="Collision" type="CollisionShape2D" parent="Player"]
 position = Vector2(312, 214)
 rotation = -1.57069
 shape = SubResource("CapsuleShape2D_sp1ic")
