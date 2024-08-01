@@ -104,6 +104,14 @@ position = Vector2(1036, 420)
 scale = Vector2(3.25, 3.25)
 texture = ExtResource("5_vv4wv")
 
+[node name="Button" type="Button" parent="."]
+offset_left = 24.0
+offset_top = 592.0
+offset_right = 204.0
+offset_bottom = 623.0
+theme_override_font_sizes/font_size = 15
+text = "Assets from kenney.nl"
+
 [connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="How-to" to="." method="_on_howto_pressed"]
 [connection signal="pressed" from="Levels" to="." method="_on_levels_pressed"]
