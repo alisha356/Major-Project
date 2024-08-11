@@ -511,12 +511,34 @@ position = Vector2(312, 217)
 zoom = Vector2(1.5, 1.5)
 
 [node name="Exit Button" type="Button" parent="Player/Camera2D"]
-offset_left = -376.0
+offset_left = -375.0
 offset_top = -208.0
-offset_right = -320.0
+offset_right = -319.0
 offset_bottom = -178.0
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 18
 text = "Exit"
+
+[node name="Background" type="Button" parent="Player/Camera2D"]
+offset_left = -375.0
+offset_top = -166.0
+offset_right = -293.0
+offset_bottom = -121.0
+
+[node name="Score" type="Label" parent="Player/Camera2D"]
+offset_left = -370.0
+offset_top = -165.0
+offset_right = -309.0
+offset_bottom = -142.0
+theme_override_font_sizes/font_size = 15
+text = "Score; 0"
+
+[node name="Deaths" type="Label" parent="Player/Camera2D"]
+offset_left = -370.0
+offset_top = -145.0
+offset_right = -297.0
+offset_bottom = -122.0
+theme_override_font_sizes/font_size = 15
+text = "Deaths; 0"
 
 [node name="Orange Player" type="AnimatedSprite2D" parent="Player"]
 position = Vector2(312, 212)
@@ -559,6 +581,9 @@ position = Vector2(1016, 584)
 
 [node name="Coin7" parent="." instance=ExtResource("11_yxuyl")]
 position = Vector2(1400, 612)
+
+[node name="Coin8" parent="." instance=ExtResource("11_yxuyl")]
+position = Vector2(88, 597)
 
 [connection signal="body_entered" from="End Door" to="." method="_on_area_2d_body_entered"]
 [connection signal="pressed" from="Player/Camera2D/Exit Button" to="." method="_on_exit_button_pressed"]

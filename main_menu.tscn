@@ -110,7 +110,7 @@ offset_top = 592.0
 offset_right = 204.0
 offset_bottom = 623.0
 theme_override_font_sizes/font_size = 15
-text = "Assets from kenney.nl"
+text = "Assets from kenney.nl and text from cooltext.com"
 
 [connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="How-to" to="." method="_on_howto_pressed"]
