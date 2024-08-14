@@ -1,5 +1,6 @@
 extends Node2D
 @onready var deaths = $Player/Camera2D/Deaths
+@onready var stopwatch = $Player/Camera2D/Stopwatch
 
 func _ready():
 	global.score = 0
@@ -25,3 +26,19 @@ func _on_respawn_point_body_entered(body):
 		global.score = 0
 		global.deaths += 1
 		get_tree().change_scene_to_file("res://level_2.tscn")
+
+
+func _on_timer_timeout():
+	global.seconds += 1
+	global.time = str(global.minutes)+ " : " + str(global.seconds)
+	if global.seconds >= 60:
+		global.seconds = 0
+		global.minutes += 1
+		global.time = str(global.minutes)+ " : " + str(global.seconds)
+	if global.seconds < 10 and global.minutes < 10:
+		global.time = "0" + str(global.minutes)+ " : 0" + str(global.seconds)
+	elif global.seconds < 10:
+		global.time = str(global.minutes)+ " : 0" + str(global.seconds)
+	elif global.minutes < 10:
+		global.time = "0" + str(global.minutes)+ " : " + str(global.seconds)
+	stopwatch.text = str(global.time)

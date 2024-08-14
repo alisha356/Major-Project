@@ -543,6 +543,22 @@ offset_bottom = -122.0
 theme_override_font_sizes/font_size = 15
 text = "Deaths; 0"
 
+[node name="Time background" type="Button" parent="Player/Camera2D"]
+offset_left = -375.0
+offset_top = -116.0
+offset_right = -316.0
+offset_bottom = -94.0
+
+[node name="Stopwatch" type="Label" parent="Player/Camera2D"]
+offset_left = -371.0
+offset_top = -117.0
+offset_right = -321.0
+offset_bottom = -94.0
+text = "00 : 00"
+
+[node name="Timer" type="Timer" parent="Player/Camera2D"]
+autostart = true
+
 [node name="Orange Player" type="AnimatedSprite2D" parent="Player"]
 position = Vector2(312, 212)
 sprite_frames = SubResource("SpriteFrames_cgya6")
@@ -591,4 +607,5 @@ position = Vector2(1960, 64)
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
 [connection signal="pressed" from="Player/Camera2D/Exit Button" to="." method="_on_exit_button_pressed"]
+[connection signal="timeout" from="Player/Camera2D/Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Respawn point" to="." method="_on_respawn_point_body_entered"]
