@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dw8d63d4d3h48" path="res://Assets/Sand Tiles.png" id="6_a38k7"]
 [ext_resource type="Texture2D" uid="uid://b6rth3fx2glpw" path="res://Assets/Door.png" id="7_q7p0r"]
 [ext_resource type="Texture2D" uid="uid://ccpfbyia4drt" path="res://Assets/Mushies.png" id="7_wu7vu"]
-[ext_resource type="Texture2D" path="res://Assets/Orange Idle.png" id="10_ypvu6"]
+[ext_resource type="Texture2D" uid="uid://dfhklen3g1thx" path="res://Assets/Orange Idle.png" id="10_ypvu6"]
 [ext_resource type="Texture2D" uid="uid://b6b31bua8uvox" path="res://Assets/Pink Idle.png" id="11_dbqfn"]
 [ext_resource type="PackedScene" uid="uid://dgagijpmld8ec" path="res://coin.tscn" id="11_yxuyl"]
 

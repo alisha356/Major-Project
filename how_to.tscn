@@ -48,11 +48,11 @@ offset_bottom = 379.0
 text = "Collect all of the coins as you jump across the platforms."
 
 [node name="Ground" type="Button" parent="."]
-offset_left = 421.0
+offset_left = 330.0
 offset_top = 405.0
-offset_right = 730.0
+offset_right = 822.0
 offset_bottom = 436.0
-text = "Make sure you don't touch the ground!"
+text = "If you fall back to the ground you will die and have to respawn!"
 
 [node name="Arrows" type="Button" parent="."]
 offset_left = 367.0
