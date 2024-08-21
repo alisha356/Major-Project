@@ -5,6 +5,7 @@ extends Node2D
 func _ready():
 	global.score = 0
 	deaths.text = "Deaths; " + str(global.deaths)
+	stopwatch.text = str(global.time)
 	if global.character == "Orange Player":
 		pass
 	if global.character == "Pink Player":
